@@ -1,0 +1,112 @@
+@import './global'    
+@import './variables'
+
+.wrap
+    background-color #20B2AA
+    background linear-gradient(150deg, #20B2AA 5%, #FFBB00)
+	width 100%
+	height 100vh
+	position relative
+    
+header
+    position relative
+    z-index 3
+    nav 
+        position fixed
+        width 100vw
+        height 70px
+        background white
+        background-color rgba(255 255 255 .5)
+        box-shadow 0 0 5px
+        .masapolylogo
+            float left
+            padding 5px 0 0 10px
+            object
+                width 65px
+                height auto
+        ul 
+            float right
+            margin 10px 10px 0 0
+            li 
+                list-style none
+                display inline-flex
+                vertical-align middle
+                object 
+                    height 50px
+                    width auto
+                @media mq-mobile
+                    span 
+                        display none
+                        
+#game1
+    padding-top 71px
+    background linear-gradient(150deg, #20B2AA 5%, #FFBB00)
+    background-repeat no-repeat
+    @media mq-normal
+        width 75%
+        float right
+    @media mq-xl
+        width 75vw    
+    
+.present
+    width 25%
+    background-color #5bc0de
+    position inherit
+    z-index 2
+    @media mq-normal
+        min-height 100vh
+        padding-top 71px
+        float left
+        position fixed
+    @media mq-bxs
+        width 100%
+        overflow hidden
+        display inline-flex
+        background-color rgba(255 255 255 .5)
+    @media mq-xl
+        width 25vw
+    div
+        height 100px
+        padding 10px
+        @media mq-mobile
+            height 70px
+            padding 8px
+        object 
+            height 100%
+        p 
+            display inline
+            line-height 80px
+            text-align center
+            vertical-align top
+            color white
+            font-family custom-sans-serif
+            font-size 20px
+            @media mq-xl
+                font-size 32px
+            @media mq-bxs
+                display none
+                
+.modal-body
+    ul 
+        li 
+            list-style none
+            
+/******** SVG *************/
+#ture
+#false
+#ture_1_
+#false_1_
+#ture_2_
+#false_2_
+#ture_3_
+#false_3_
+#ture_4_
+#false_4_
+    display none
+    
+#romantemple
+#horse
+#chair
+#frencechurch
+#waterchurch
+    cursor pointer

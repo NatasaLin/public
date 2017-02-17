@@ -1,0 +1,78 @@
+@font-face {
+  font-family: custom-sans-serif;
+  src: local("Heiti TC"), local("微軟正黑體"), local("Microsoft JhengHei");
+  unicode-range: U+4E00-9FFF;
+}
+@font-face {
+  font-family: custom-sans-serif;
+  src: local(Helvetica), local(Segoe UI);
+  unicode-range: U+00-024F;
+}
+.custom-sans-serif {
+  font-family: custom-sans-serif;
+}
+@font-face {
+  font-family: custom-serif;
+  src: local("LiSong Pro"), local("新細明體"), local("PMingLiU");
+  unicode-range: U+4E00-9FFF;
+}
+@font-face {
+  font-family: custom-serif;
+  src: local(Times), local(Times New Roman);
+  unicode-range: U+00-024F;
+}
+.custom-serif {
+  font-family: custom-serif;
+}
+body {
+  overflow-x: hidden;
+  font-family: custom-serif;
+}
+.text-muted {
+  color: #fff;
+}
+.text-primary {
+  color: #fed136;
+}
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+p.large {
+  font-size: 20px;
+}
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  outline: none;
+  text-decoration: none;
+  font-family: custom-sans-serif;
+}
+a {
+  color: #fff;
+  text-shadow: 0 1px 5px rgba(0,0,0,0.9);
+}
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: custom-sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 1px 5px rgba(0,0,0,0.6);
+}
+.navbar {
+  position: relative;
+  min-height: 50px;
+}

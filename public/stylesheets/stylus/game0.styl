@@ -1,0 +1,241 @@
+@import './global'    
+@import './variables'
+
+.wrap
+    background-color #20B2AA
+    background linear-gradient(150deg, #20B2AA 5%, #FFBB00)
+	width 100%
+	height 100vh
+	position relative
+    
+header
+    position relative
+    z-index 3
+    nav 
+        position fixed
+        width 100vw
+        height 70px
+        background white
+        background-color rgba(255 255 255 .5)
+        box-shadow 0 0 5px
+        .masapolylogo
+            float left
+            padding 5px 0 0 10px
+            object
+                width 65px
+                height auto
+        ul 
+            float right
+            margin 10px 10px 0 0
+            li 
+                list-style none
+                display inline-flex
+                vertical-align middle
+                object 
+                    height 50px
+                    width auto
+                @media mq-mobile
+                    span 
+                        display none
+                        
+#game1
+    padding-top 71px
+    @media mq-normal
+        width 75%
+        float right
+    @media mq-xl
+        width 75vw
+    .wrap
+        position static
+        z-index 1
+        overflow hidden
+        background-image url(game1bg.svg), linear-gradient(150deg, #20B2AA 5%, #FFBB00)
+        background-repeat no-repeat
+        @media mq-bxs
+            height 480px
+            background-size 100% 100%
+            background-position center 0
+        @media mq-normal
+            height 864px
+            background-size 100% 100%
+            background-position 0 0
+        @media screen and (min-width: 1037px) and (max-width: 1439px)
+            height 1258px
+        @media mq-xl
+            height 1920px
+            background-size auto
+            background-position center 0
+        .Qbtn
+            cursor pointer
+            position relative
+            margin 0 auto
+            width 324px
+            height 324px
+            img 
+                position absolute
+                height auto
+                margin 0 auto
+                @media mq-bxs
+                    height 22.5%
+                @media mq-normal
+                    height 40.5%
+                @media screen and (min-width: 1037px) and (max-width: 1439px)
+                    height 59%
+                @media mq-xl
+                    height auto
+            div.answer
+                position absolute
+                @media mq-bxs
+                    margin-top -10%
+                    margin-left 0
+                    svg 
+                        width 20%
+                        height auto
+                @media mq-normal
+                    padding-top 0
+                    margin-left 5%
+                    svg 
+                        width 25%
+                @media screen and (min-width: 1037px) and (max-width: 1439px)
+                    padding-top calc(50%- 135px)
+                    margin-left  calc(-50%+ 100px)
+                    svg 
+                        width auto
+                        height auto
+                @media mq-xl
+                    padding-top calc(50%- 75px)
+                    margin-left  calc(-50%+ 125px)
+                    svg 
+                        width auto
+                        height auto
+        #romantemple
+            @media mq-bxs
+                top 4px
+                right -120px
+            @media mq-normal
+                top 9px
+                right -85px
+            @media screen and (min-width: 1037px) and (max-width: 1439px)
+                top 11px
+                right -51px
+            @media mq-xl
+                top 18px
+                right 10px
+        #horse
+            @media mq-bxs
+                top -226px
+                left 190px
+            @media mq-normal
+                top -149px
+                left 216px
+            @media screen and (min-width: 1037px) and (max-width: 1439px)
+                top -70px
+                left 240px
+            @media mq-xl
+                top 80px
+                left 286px
+        #chair
+            @media mq-bxs
+                top -470px
+                right -46.5px
+            @media mq-normal
+                top -327px
+                right 45px
+            @media screen and (min-width: 1037px) and (max-width: 1439px)
+                top -180px
+                right 140px
+            @media mq-xl               
+                top 52px
+                right 305px
+        #frencechurch
+            @media mq-bxs
+                left 222px
+                bottom 859.5px
+                img 
+                    height 100%
+                    width 25%
+            @media mq-normal
+                left 269px
+                bottom 640px
+                img 
+                    height 100%
+                    width 45%
+            @media screen and (min-width: 1037px) and (max-width: 1439px)
+                left 318px
+                bottom 413px
+                img 
+                    width 65.5%
+            @media mq-xl
+                left 396px
+                bottom 74px
+                img 
+                    height auto
+                    width auto
+        #waterchurch
+            @media mq-bxs
+                top -1063px
+                right -95px
+                img 
+                    height 100%
+                    width 25%
+            @media mq-normal
+                top -745px
+                right -41px
+                img 
+                    height 100%
+                    width 45%
+            @media screen and (min-width: 1037px) and (max-width: 1439px)
+                top -419px
+                right 14px
+                img 
+                    width 65.5%
+            @media mq-xl
+                top 155px
+                right 106px
+                img 
+                    height auto
+                    width auto
+    
+.present
+    width 25%
+    background-color #5bc0de
+    position inherit
+    z-index 2
+    @media mq-normal
+        min-height 100vh
+        padding-top 71px
+        float left
+        position fixed
+    @media mq-bxs
+        width 100%
+        overflow hidden
+        display inline-flex
+        background-color rgba(255 255 255 .5)
+    @media mq-xl
+        width 25vw
+    div
+        height 100px
+        padding 10px
+        @media mq-mobile
+            height 70px
+            padding 8px
+        object 
+            height 100%
+        p 
+            display inline
+            line-height 80px
+            text-align center
+            vertical-align top
+            color white
+            font-family custom-sans-serif
+            font-size 20px
+            @media mq-xl
+                font-size 32px
+            @media mq-bxs
+                display none
+                
+.modal-body
+    ul 
+        li 
+            list-style none
+            

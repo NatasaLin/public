@@ -1,0 +1,222 @@
+@font-face {
+  font-family: custom-sans-serif;
+  src: local("Heiti TC"), local("微軟正黑體"), local("Microsoft JhengHei");
+  unicode-range: U+4E00-9FFF;
+}
+@font-face {
+  font-family: custom-sans-serif;
+  src: local(Helvetica), local(Segoe UI);
+  unicode-range: U+00-024F;
+}
+.custom-sans-serif {
+  font-family: custom-sans-serif;
+}
+@font-face {
+  font-family: custom-serif;
+  src: local("LiSong Pro"), local("新細明體"), local("PMingLiU");
+  unicode-range: U+4E00-9FFF;
+}
+@font-face {
+  font-family: custom-serif;
+  src: local(Times), local(Times New Roman);
+  unicode-range: U+00-024F;
+}
+.custom-serif {
+  font-family: custom-serif;
+}
+body {
+  overflow-x: hidden;
+  font-family: custom-serif;
+}
+.text-muted {
+  color: #fff;
+}
+.text-primary {
+  color: #fed136;
+}
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+p.large {
+  font-size: 20px;
+}
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  outline: none;
+  text-decoration: none;
+  font-family: custom-sans-serif;
+}
+a {
+  color: #fff;
+  text-shadow: 0 1px 5px rgba(0,0,0,0.9);
+}
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: custom-sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 1px 5px rgba(0,0,0,0.6);
+}
+.navbar {
+  position: relative;
+  min-height: 50px;
+}
+.wrap {
+  background-color: #20b2aa;
+  background: linear-gradient(150deg, #20b2aa 5%, #fb0);
+}
+width 100% {
+  height: 100vh;
+  position: relative;
+}
+header {
+  position: relative;
+  z-index: 3;
+}
+header nav {
+  position: fixed;
+  width: 100vw;
+  height: 70px;
+  background: #fff;
+  background-color: rgba(255,255,255,0.5);
+  box-shadow: 0 0 5px;
+}
+header nav .masapolylogo {
+  float: left;
+  padding: 5px 0 0 10px;
+}
+header nav .masapolylogo object {
+  width: 65px;
+  height: auto;
+}
+header nav ul {
+  float: right;
+  margin: 10px 10px 0 0;
+}
+header nav ul li {
+  list-style: none;
+  display: inline-flex;
+  vertical-align: middle;
+}
+header nav ul li object {
+  height: 50px;
+  width: auto;
+}
+@media screen and (max-width: 479px) {
+  header nav ul li span {
+    display: none;
+  }
+}
+#game1 {
+  padding-top: 71px;
+  background: linear-gradient(150deg, #20b2aa 5%, #fb0);
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  #game1 {
+    width: 75%;
+    float: right;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+  #game1 {
+    width: 75vw;
+  }
+}
+.present {
+  width: 25%;
+  background-color: #5bc0de;
+  position: inherit;
+  z-index: 2;
+}
+@media screen and (min-width: 768px) {
+  .present {
+    min-height: 100vh;
+    padding-top: 71px;
+    float: left;
+    position: fixed;
+  }
+}
+@media screen and (max-width: 767px) {
+  .present {
+    width: 100%;
+    overflow: hidden;
+    display: inline-flex;
+    background-color: rgba(255,255,255,0.5);
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+  .present {
+    width: 25vw;
+  }
+}
+.present div {
+  height: 100px;
+  padding: 10px;
+}
+@media screen and (max-width: 479px) {
+  .present div {
+    height: 70px;
+    padding: 8px;
+  }
+}
+.present div object {
+  height: 100%;
+}
+.present div p {
+  display: inline;
+  line-height: 80px;
+  text-align: center;
+  vertical-align: top;
+  color: #fff;
+  font-family: custom-sans-serif;
+  font-size: 20px;
+}
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+  .present div p {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .present div p {
+    display: none;
+  }
+}
+.modal-body ul li {
+  list-style: none;
+}
+/******** SVG *************/
+#ture,
+#false,
+#ture_1_,
+#false_1_,
+#ture_2_,
+#false_2_,
+#ture_3_,
+#false_3_,
+#ture_4_,
+#false_4_ {
+  display: none;
+}
+#romantemple,
+#horse,
+#chair,
+#frencechurch,
+#waterchurch {
+  cursor: pointer;
+}
